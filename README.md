@@ -10,7 +10,7 @@ In addition, please refer to the following report link for detailed report and d
 
 ## Hardware
 
-In this project, the following machine was used to train the classification model.
+In this project, the following machine was used to train the emotion classification model.
 
 |                 | Operating System           | CPU                                      | GPU                         | 
 |-----------------|----------------------------|------------------------------------------|-----------------------------|
