@@ -76,7 +76,7 @@ class RoBERTa(nn.Module):
 ```
 
 - #### ERNIE 2.0-Large
-- ```python
+```python
 class ERNIE(nn.Module):
 
     def __init__(self, n_classes):
@@ -94,7 +94,7 @@ class ERNIE(nn.Module):
 ```
 
 - #### XLNet
-- ```python
+```python
 class XLNet(nn.Module):
 
     def __init__(self, n_classes):
