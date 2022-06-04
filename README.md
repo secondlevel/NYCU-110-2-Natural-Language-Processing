@@ -53,7 +53,7 @@ pip install nltk
 
 
 ## Model Architecture
-In this project, we used the following three pretrained models for transfer learning, which include [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf), [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf) and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf).
+In this project, we used the following three pretrained models for transfer learning, which include [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf)[1], [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf)[2] and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf)[3].
 
 The framework of these three classification models is as follows: the model would be added to the linear layer for transfer learning.
 
@@ -117,7 +117,9 @@ class XLNet(nn.Module):
 
 ## Testing
 
-
 ## Ablation Study
 
 ## Reference
+[1]	Y.Liu et al., “RoBERTa: A Robustly Optimized BERT Pretraining Approach,” arXiv, arXiv:1907.11692, Jul. 2019. doi: 10.48550/arXiv.1907.11692.
+[2]	Y.Sun et al., “ERNIE 2.0: A Continual Pre-training Framework for Language Understanding,” arXiv, arXiv:1907.12412, Nov. 2019. doi: 10.48550/arXiv.1907.12412.
+[3]	Z.Yang, Z.Dai, Y.Yang, J.Carbonell, R.Salakhutdinov, and Q. V. Le, “XLNet: Generalized Autoregressive Pretraining for Language Understanding,” arXiv, arXiv:1906.08237, Jan. 2020. doi: 10.48550/arXiv.1906.08237.
