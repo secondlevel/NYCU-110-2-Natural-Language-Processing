@@ -23,4 +23,22 @@ In this project, the following machine was used to train the emotion classificat
 
 In this project, We use anaconda and pip to establish the execution environment.
 
+The following two **options** can be used to build an execution environment
+  
+- ### First Option
+```bash=
+conda env create -f environment.yml
+```
 
+- ### Second Option 
+```bash=
+conda nlp --name nlp python=3.8
+conda activate nlp
+conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
+conda install matplotlib pandas scikit-learn -y
+pip install tqdm
+pip install transformer
+pip install sentencepiece
+pip install emoji
+pip install nltk
+```
