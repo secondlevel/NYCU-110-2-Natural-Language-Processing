@@ -26,12 +26,12 @@ In this project, we use conda and pip toolkit to build the environment.
 The following two **options** are provided for building the environment.
   
 - #### First Option
-```bash=
+```bash
 conda env create -f environment.yml
 ```
 
 - #### Second Option 
-```bash=
+```bash
 conda nlp --name nlp python=3.8
 conda activate nlp
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
@@ -53,7 +53,66 @@ pip install nltk
 
 
 ## Model Architecture
+In this project, we used the following three pretrained model to do the transfer learning, which including [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf), [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf) and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf).
 
+In addition, I added the linear layer to the Vision Transformer (VIT) [1], all the weight of the VIT is **unfreeze**.
+
+The Architecture of the three classification model is as follows.
+
+- #### RoBERTa-Large
+```python
+class RoBERTa(nn.Module):
+
+    def __init__(self, n_classes):
+        super(RoBERTa, self).__init__()
+        self.model = RobertaModel.from_pretrained("roberta-large", hidden_dropout_prob=0.2, attention_probs_dropout_prob=0.2)
+        self.out = nn.Linear(self.model.config.hidden_size, n_classes)
+        
+    def forward(self, input_ids, attention_mask):
+        last_hidden_state, pooled_output = self.model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            return_dict=False
+        )
+        return self.out(pooled_output)
+```
+
+- #### ERNIE 2.0-Large
+- ```python
+class ERNIE(nn.Module):
+
+    def __init__(self, n_classes):
+        super(ERNIE, self).__init__()
+        self.model = AutoModel.from_pretrained("nghuyong/ernie-2.0-large-en", hidden_dropout_prob=0.2, attention_probs_dropout_prob=0.2)
+        self.out = nn.Linear(self.model.config.hidden_size, n_classes)
+
+    def forward(self, input_ids, attention_mask):
+        last_hidden_state, pooled_output = self.model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            return_dict=False
+        )
+        return self.out(pooled_output)
+```
+
+- #### XLNet
+- ```python
+class XLNet(nn.Module):
+
+    def __init__(self, n_classes):
+        super(XLNet, self).__init__()
+        self.model = XLNetModel.from_pretrained("xlnet-large-cased")
+        self.drop = nn.Dropout(p=0.3)
+        self.out = nn.Linear(self.model.config.hidden_size, n_classes)
+
+    def forward(self, input_ids, attention_mask):
+        pooled_output = self.model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            return_dict=False
+        )
+        return self.out(pooled_output[0][:, -1, :])
+```
 
 ## Training
 
