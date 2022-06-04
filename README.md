@@ -21,7 +21,7 @@ In this project, the following machine was used to train the emotion classificat
 
 ## Requirement
 
-In this project, We use anaconda and pip to establish the execution environment.
+In this project, we use anaconda and pip toolkits to establish the execution environment.
 
 The following two **options** can be used to build an execution environment
   
