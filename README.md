@@ -121,5 +121,7 @@ class XLNet(nn.Module):
 
 ## Reference
 [1]	Y. Liu et al., “RoBERTa: A Robustly Optimized BERT Pretraining Approach,” arXiv, arXiv:1907.11692, Jul. 2019. doi: 10.48550/arXiv.1907.11692.  
+
 [2]	Y. Sun et al., “ERNIE 2.0: A Continual Pre-training Framework for Language Understanding,” arXiv, arXiv:1907.12412, Nov. 2019. doi: 10.48550/arXiv.1907.12412.  
+
 [3]	Z. Yang, Z. Dai, Y. Yang, J. Carbonell, R. Salakhutdinov, and Q. V. Le, “XLNet: Generalized Autoregressive Pretraining for Language Understanding,” arXiv, arXiv:1906.08237, Jan. 2020. doi: 10.48550/arXiv.1906.08237.
