@@ -42,3 +42,5 @@ pip install sentencepiece
 pip install emoji
 pip install nltk
 ```
+
+## Repository Structure
