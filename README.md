@@ -51,8 +51,7 @@ pip install nltk
 ## Model Architecture
 In this project, we used the following three pretrained models for transfer learning, which include [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf)[1], [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf)[2] and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf)[3].
 
-The framework of these three classification models is as follows: the model would be added to the linear layer for transfer learning.  
-The following code is only for demonstration.
+The framework of these three classification models is as follows **(only for demonstration)**: the model would be added to the linear layer for transfer learning. 
 
 - #### RoBERTa-Large
 ```python
