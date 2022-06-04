@@ -21,9 +21,9 @@ In this project, the following machine was used to train the emotion classificat
 
 ## Requirement
 
-In this project, we use conda and pip toolkit to build the execution environment.
+In this project, we use conda and pip toolkit to build the environment.
 
-The following two **options** can be used to build an execution environment
+The following two **options** can be used to build the environment.
   
 - #### First Option
 ```bash=
