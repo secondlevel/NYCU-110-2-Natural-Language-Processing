@@ -23,7 +23,7 @@ In this project, the following machine was used to train the emotion classificat
 
 In this project, we use conda and pip toolkit to build the environment.
 
-The following two **options** was provided to build the environment.
+The following two **options** are provided for building the environment.
   
 - #### First Option
 ```bash=
