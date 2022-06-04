@@ -25,12 +25,12 @@ In this project, we use conda and pip toolkit to build the execution environment
 
 The following two **options** can be used to build an execution environment
   
-- ### First Option
+- #### First Option
 ```bash=
 conda env create -f environment.yml
 ```
 
-- ### Second Option 
+- #### Second Option 
 ```bash=
 conda nlp --name nlp python=3.8
 conda activate nlp
