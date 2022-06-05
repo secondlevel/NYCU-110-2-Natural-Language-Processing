@@ -1,0 +1,10 @@
+model: roberta-large # bert-base, ernie-base, roberta-base, xlnet-base, bert-large, ernie-large, roberta-large, xlnet-large, YOSO
+USING_DATA: 5(utterance+prompt) # 1(utterance+prompt), 2(utterance+prompt)...
+EPOCHS: 20 
+BATCH_SIZE: 8 # 1 2 4 8(large model) 32(recommend) 64(recommend) 
+LR: 2e-6 # 2e-3 2e-5(recommend) 2e-6(large model)
+MAX_LEN: 160 # 100 128 160 256 512
+FREEZE: [embeddings, pooler] #[], [embeddings], [encoder], [pooler], [embeddings, encoder], [encoder, pooler], [embeddings, encoder, pooler]...
+DROPOUT_RATE: None #None or values
+HIDDEN_DROPOUT_PROB: None #None or values
+ATTENTION_PROBS_DROPOUT_PROB: None #None or values
