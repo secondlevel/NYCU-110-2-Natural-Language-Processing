@@ -153,6 +153,13 @@ class XLNet(nn.Module):
 
 ## Training
 
+Please follow the step to train the model.
+
+#### 1. Replace the parameters.yaml file content you prefer.
+
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172034475-1b18f6b3-a8e3-4a21-ae06-1d2903969df1.png" width="65%" height="65%" hspace="0"/>
+</p>
 
 ## Testing
 
