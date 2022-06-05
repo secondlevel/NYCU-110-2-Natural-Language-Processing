@@ -156,7 +156,7 @@ class XLNet(nn.Module):
 
 ## Testing
 
-## Ablation Study
+## Experiment Result
 
 ## Reference
 [1]	Y. Liu et al., “RoBERTa: A Robustly Optimized BERT Pretraining Approach,” arXiv, arXiv:1907.11692, Jul. 2019. doi: 10.48550/arXiv.1907.11692.  
