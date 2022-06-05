@@ -50,7 +50,6 @@ The ERNIE, RoBERTa and XLNet directories can be downloaded from the following li
 https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sharing
 
 ```
-├─ ALL_model.py
 ├─ experiment
 │  ├─ ERNIE
 │     ├─ figure
@@ -76,6 +75,11 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ parameters.yaml
 │     ├─ record.csv
 │     └─ submission.csv
+├─ data
+│  ├─ best_data
+│     ├─ fixed_group_test.csv
+│     ├─ fixed_group_train.csv
+│     └─ fixed_group_valid.csv
 ├─ parameters.yaml
 ├─ nlpdatasets.py
 ├─ total_model.py
