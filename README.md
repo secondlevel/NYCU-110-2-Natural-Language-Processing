@@ -65,10 +65,6 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ fixed_group_test.csv
 │     ├─ fixed_group_train.csv
 │     └─ fixed_group_valid.csv
-│  ├─ 2(utterance+prompt)
-│     ├─ fixed_group_test.csv
-│     ├─ fixed_group_train.csv
-│     └─ fixed_group_valid.csv
 │  ├─ ...
 │  ├─ ...
 │  ├─ ...
