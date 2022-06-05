@@ -46,7 +46,7 @@ pip install nltk
 
 ## Repository Structure
 
-The ERNIE, RoBERTa and XLNet directories can be downloaded from the following link. Please put them under the corresponding directory.
+The ERNIE, RoBERTa and XLNet directories can be downloaded from the following link. Please put them under the corresponding directory.  
 https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sharing
 
 ```
