@@ -177,14 +177,11 @@ Please follow the step to train the model.
 Please follow the step to generate the submission.csv. 
 
 #### 1. Input the following commend.
+
+The argument behind the --directory is the directory under the experiment. These directory should have the parameters.yaml and best_model_state.bin.
+
 ```bash
 python test.py --directory RoBERTa
-```
-```bash
-python test.py --directory ERNIE
-```
-```bash
-python test.py --directory XLNet
 ```
 
 #### 2. The submission.csv will be stored under the path of experiment/specified_directory. 
