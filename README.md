@@ -33,7 +33,7 @@ conda env create -f environment.yml
 
 - #### Second Option 
 ```bash
-conda nlp --name nlp python=3.8
+conda create --name nlp python=3.8
 conda activate nlp
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
 conda install matplotlib pandas scikit-learn -y
