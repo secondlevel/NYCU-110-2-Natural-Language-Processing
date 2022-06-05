@@ -46,6 +46,8 @@ pip install nltk
 
 ## Repository Structure
 
+The ERNIE, RoBERTa and XLNet directorys can be download in the link, please put it under the corresponding directory.
+
 ```
 ├─ ALL_model.py
 ├─ experiment
