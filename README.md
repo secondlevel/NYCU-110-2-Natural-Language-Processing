@@ -155,7 +155,7 @@ class XLNet(nn.Module):
 
 Please follow the step to train the model.
 
-#### 1. Replace these arguments through parameters.yaml file.
+#### 1. Setting arguments through parameters.yaml file.
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034634-fe0bfa25-e8e8-46fd-bbfb-12be85b8a627.png" width="65%" height="65%" hspace="0"/>
 </p>
