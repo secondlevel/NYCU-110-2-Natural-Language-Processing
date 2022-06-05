@@ -158,11 +158,12 @@ class XLNet(nn.Module):
 
 The following instruction was provided to evaluate the specified model through the directory under the experiment directory.  
 
+#### example:
 ```bash
 python test.py --directory RoBERTa
-python test.py --directory ERNIE
-python test.py --directory XLNet
 ```
+
+## Ensemble
 
 
 ## Experiment Result
