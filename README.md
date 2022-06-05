@@ -28,7 +28,7 @@ In this project, the following machine was used to train the emotion classificat
 
 ## Requirement
 
-In this project, we use conda and pip toolkit to build the environment.
+In this project, the conda and pip toolkit was used to build the environment.
 
 The following two **options** are provided for building the environment.
   
