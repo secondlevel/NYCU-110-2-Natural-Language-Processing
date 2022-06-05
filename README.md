@@ -155,11 +155,21 @@ class XLNet(nn.Module):
 
 Please follow the step to train the model.
 
-#### 1. Replace the parameters.yaml file content you prefer.
-
+#### 1. Replace these arguments through parameters.yaml file.
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034475-1b18f6b3-a8e3-4a21-ae06-1d2903969df1.png" width="65%" height="65%" hspace="0"/>
+  <img src="https://user-images.githubusercontent.com/44439517/172034634-fe0bfa25-e8e8-46fd-bbfb-12be85b8a627.png" width="65%" height="65%" hspace="0"/>
 </p>
+
+#### 2. Input the following commend.
+```bash
+python train.py
+```
+
+#### 3. The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172034608-28f49abd-2174-4b69-8c38-deee57d1b4de.png" width="65%" height="65%" hspace="0"/>
+</p>
+
 
 ## Testing
 
