@@ -174,11 +174,9 @@ Please follow the step to train the model.
 
 ## Testing
 
-The following instruction was provided to evaluate the specified model through the directory under the experiment directory.  
+Please follow the step to generate the submission.csv. 
 
-The file submission.csv will be stored under the path of experiment/specified_directory.
-
-#### example:
+#### 1. Input the following commend.
 ```bash
 python test.py --directory RoBERTa
 ```
@@ -188,6 +186,11 @@ python test.py --directory ERNIE
 ```bash
 python test.py --directory XLNet
 ```
+
+#### 2. The submission.csv will be stored under the path of experiment/specified_directory. 
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172035057-d8af6b99-2e42-4f57-a81f-d98208b482fa.png" width="50%" height="50%" hspace="0"/>
+</p>
 
 ## Ensemble
 
