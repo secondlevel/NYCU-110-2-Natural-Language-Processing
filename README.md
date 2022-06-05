@@ -167,7 +167,7 @@ python train.py
 
 #### 3. The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034608-28f49abd-2174-4b69-8c38-deee57d1b4de.png" width="65%" height="65%" hspace="0"/>
+  <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="40%" height="40%" hspace="0"/>
 </p>
 
 
