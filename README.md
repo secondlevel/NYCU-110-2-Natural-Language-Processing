@@ -178,7 +178,9 @@ Please follow the step to generate the submission.csv.
 
 #### 1. Input the following commend.
 
-The argument behind the --directory is the directory under the experiment. These directory should have **parameters.yaml** and **best_model_state.bin** file.
+The argument behind the --directory is the directory under the experiment.  
+
+These directory should have **parameters.yaml** and **best_model_state.bin** file.
 
 ```bash
 python test.py --directory RoBERTa
