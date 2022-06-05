@@ -92,7 +92,7 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 ## Model Architecture
 In this project, we used the following three pretrained models for transfer learning, which include [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf)[1], [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf)[2] and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf)[3].
 
-The framework of these three classification models is as follows **(only for demonstration)**: the linear layer would be added to model for transfer learning. 
+The framework of these three classification models is as follows **(only for demonstrate)**: the linear layer would be added to model for transfer learning. 
 
 - #### RoBERTa-Large
 ```python
