@@ -157,10 +157,17 @@ class XLNet(nn.Module):
 ## Testing
 
 The following instruction was provided to evaluate the specified model through the directory under the experiment directory.  
+The evaluation result named submission.csv will be stored under the path of experiment/specified_directory.
 
 #### example:
 ```bash
 python test.py --directory RoBERTa
+```
+```bash
+python test.py --directory ERNIE
+```
+```bash
+python test.py --directory XLNet
 ```
 
 ## Ensemble
