@@ -46,6 +46,44 @@ pip install nltk
 
 ## Repository Structure
 
+```
+├─ ALL_model.py
+├─ experiment
+│  ├─ ERNIE
+│     ├─ figure
+│        ├─ accuracy.png
+│        └─ loss.png 
+│     ├─ best_model_state.bin
+│     ├─ parameters.yaml
+│     ├─ record.csv
+│     └─ submission.csv
+│  ├─ RoBERTa
+│     ├─ figure
+│        ├─ accuracy.png
+│        └─ loss.png 
+│     ├─ best_model_state.bin
+│     ├─ parameters.yaml
+│     ├─ record.csv
+│     └─ submission.csv
+│  └─ XLNet
+│     ├─ figure
+│        ├─ accuracy.png
+│        └─ loss.png 
+│     ├─ best_model_state.bin
+│     ├─ parameters.yaml
+│     ├─ record.csv
+│     └─ submission.csv
+├─ parameters.yaml
+├─ nlpdatasets.py
+├─ total_model.py
+├─ train.py
+├─ test.py
+├─ fixed_test.csv
+├─ fixed_train.csv
+├─ fixed_valid.csv
+└─ README.md
+```
+
 ## Data preprocess
 
 ## Model Architecture
