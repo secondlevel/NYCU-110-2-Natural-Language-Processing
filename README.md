@@ -157,7 +157,8 @@ class XLNet(nn.Module):
 ## Testing
 
 The following instruction was provided to evaluate the specified model through the directory under the experiment directory.  
-The evaluation result named submission.csv will be stored under the path of experiment/specified_directory.
+
+The file submission.csv will be stored under the path of experiment/specified_directory.
 
 #### example:
 ```bash
