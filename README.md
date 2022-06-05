@@ -161,13 +161,20 @@ Please follow the step to train the model.
 </p>
 
 #### 2. Input the following commend.
+
+**You don't need to input any argument behind train.py.**
+
 ```bash
 python train.py
 ```
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172034701-e2838040-d9c3-4893-982d-1980efb2ea04.png" width="65%" height="65%" hspace="0"/>
+</p>
+
 
 #### 3. The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="40%" height="40%" hspace="0"/>
+  <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="50%" height="50%" hspace="0"/>
 </p>
 
 
