@@ -6,7 +6,7 @@ HuggingFace toolkit is developed by **Pytorch**.
 In addition, please refer to the following report link for detailed report and description of the experimental results.
 
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172013625-018a5f33-8b3d-4a97-8322-1103062d46c8.png" title="loss curve" width="65%" height="65%" hspace="150"/>
+  <img src="https://user-images.githubusercontent.com/44439517/172013625-018a5f33-8b3d-4a97-8322-1103062d46c8.png" width="65%" height="65%" hspace="150"/>
 </p>
 
 ## Hardware
