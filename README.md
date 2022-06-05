@@ -9,6 +9,13 @@ In addition, please refer to the following report link for detailed report and d
   <img src="https://user-images.githubusercontent.com/44439517/172013625-018a5f33-8b3d-4a97-8322-1103062d46c8.png" width="65%" height="65%" hspace="150"/>
 </p>
 
+## Reproducing Submission
+
+To reproduce the submission without retrainig, do the following steps:
+1. [Requirement](#Requirement)
+2. [Repository Structure](#Repository Structure)
+3. [Ensemble](#Ensemble)
+
 ## Hardware
 
 In this project, the following machine was used to train the emotion classification model.
