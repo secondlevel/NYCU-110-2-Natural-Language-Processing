@@ -178,7 +178,7 @@ class XLNet(nn.Module):
 
 ## Training
 
-Please follow the step to train the model.
+To training the model, do the following steps: 
 
 #### 1. Setting arguments through parameters.yaml file.
 <p float="center">
@@ -199,7 +199,7 @@ Please follow the step to train the model.
 
 ## Testing
 
-Please follow the step to generate the submission.csv. 
+To generate the submission, do the following steps: 
 
 #### 1. Input commend.
 
@@ -216,7 +216,7 @@ python test.py --directory RoBERTa
 
 ## Ensemble
 
-Please follow the step to do the ensemble.  
+To do ensemble with different submission, do the following steps: 
 
 #### 1. Input commend.
 
@@ -230,8 +230,6 @@ python ensemble.py RoBERTa ERNIE XLNet
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172035345-6b6d9930-031f-4ce0-9272-1eedf60200b4.png" width="50%" height="50%" hspace="0"/>
 </p>
-
-
 
 ## Experiment Result
 
