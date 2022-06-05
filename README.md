@@ -110,6 +110,10 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 
 ## Procedure
 
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172041655-91d949cd-25b3-4b71-8d4a-192a52f79afd.png" width="160%" height="160%" hspace="0"/>
+</p>
+
 ## Data preprocess
 
 ## Model Architecture
