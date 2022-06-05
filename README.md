@@ -194,6 +194,22 @@ python test.py --directory XLNet
 
 ## Ensemble
 
+Please follow the step to do the ensemble.  
+
+#### 1. Input the following commend.
+
+The argument behind the ensemble.py is the directory under the experiment. These directory should have the submission.csv file.
+
+```bash
+python ensemble.py RoBERTa ERNIE XLNet
+```
+
+#### 2. The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet). 
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/172035345-6b6d9930-031f-4ce0-9272-1eedf60200b4.png" width="50%" height="50%" hspace="0"/>
+</p>
+
+
 
 ## Experiment Result
 
