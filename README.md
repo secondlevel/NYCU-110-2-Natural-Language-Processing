@@ -61,6 +61,21 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ fixed_group_test.csv
 │     ├─ fixed_group_train.csv
 │     └─ fixed_group_valid.csv
+│  ├─ 1(utterance+prompt)
+│     ├─ fixed_group_test.csv
+│     ├─ fixed_group_train.csv
+│     └─ fixed_group_valid.csv
+│  ├─ 2(utterance+prompt)
+│     ├─ fixed_group_test.csv
+│     ├─ fixed_group_train.csv
+│     └─ fixed_group_valid.csv
+│  ├─ ...
+│  ├─ ...
+│  ├─ ...
+│  └─ 1+2+3+4+5+6+7+8+9(utterance+prompt)
+│     ├─ fixed_group_test.csv
+│     ├─ fixed_group_train.csv
+│     └─ fixed_group_valid.csv
 ├─ train.py
 ├─ test.py
 ├─ parameters.yaml
