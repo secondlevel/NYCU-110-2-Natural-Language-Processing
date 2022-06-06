@@ -118,7 +118,7 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 </p>
 
 ## Data preprocess
-In this project, we use the following data preprocess method to deal with the data, and we find that the fifth data preprocess method is the best method in this project. After doing the data preprocess, the sentence were seperated into different token.
+In this project, we use the following data preprocess method to deal with the data, and we find that the fifth data preprocess method is the best method in this project. After doing the data preprocess, the sentences were separated into different tokens.
 
 
 | Method                           | Before                                                                         | After                                    | 
