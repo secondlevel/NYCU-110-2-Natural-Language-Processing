@@ -123,7 +123,7 @@ In this project, we use the following data preprocess method to deal with the da
 
 | Method                           | Before                                                                         | After                                    | 
 |----------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
-| replace _comma_ to ,             | There was a lot of people_comma_ but it only felt like us in the world.        | There was a lot of people, but it only felt like us in the world.  | 
+| replace \_comma\_ to ,             | There was a lot of people_comma_ but it only felt like us in the world.        | There was a lot of people, but it only felt like us in the world.  | 
 | replace / to or                  | /Did you get him a teacher?                              | or Did you get him a teacher?                            | 
 | replace & to and                 | I believe it's because you miss family & friends         | I believe it's because you miss family and friends       | 
 | remove emoji                 | I just got new neighbors and they are so loud.,I know there probably isnt much you can do. :/         | I just got new neighbors and they are so loud.,I know there probably isnt much you can do.       | 
