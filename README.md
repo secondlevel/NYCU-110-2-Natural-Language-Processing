@@ -4,7 +4,7 @@ This project is to identify emotion through corpus, and it is related to [**kagg
 
 The model in this project was built by [**HuggingFace**](https://huggingface.co/).  
 
-Other such like a dataloader was built by Pytorch. HuggingFace toolkit was also developed by **Pytorch**.
+Other such like a dataloader was built by **Pytorch**. HuggingFace toolkit was also developed by **Pytorch**.
 
 In addition, please refer to the following report link for detailed report and description of the experimental results.
 
