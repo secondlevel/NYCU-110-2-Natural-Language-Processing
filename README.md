@@ -1,6 +1,6 @@
 # NYCU-110-2-Natural-Language-Processing
 
-This project is to identify emotion through corpus, and it is related to [**kaggle competition**](https://www.kaggle.com/competitions/nycu-nlp110/overview). The model in this project was built by [**HuggingFace**](https://huggingface.co/). HuggingFace toolkit is developed by **Pytorch**.
+This project is to identify emotion through corpus, and it is related to [**kaggle competition**](https://www.kaggle.com/competitions/nycu-nlp110/overview). The model in this project was built by [**HuggingFace**](https://huggingface.co/). Other such like a dataloader was built by Pytorch. HuggingFace toolkit is developed by **Pytorch**.
 
 In addition, please refer to the following report link for detailed report and description of the experimental results.
 
