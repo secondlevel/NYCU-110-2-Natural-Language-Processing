@@ -122,17 +122,17 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 In this project, we use the following data preprocess method to deal with the data, and we find that the fifth data preprocess method is the best method in this project. After doing the data preprocess, the sentences were separated into different tokens.
 
 
-| Method                           | Before                                                                         | After                                    | 
-|----------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
-| replace \_comma\_ to ,             | There was a lot of people_comma_ but it only felt like us in the world.        | There was a lot of people, but it only felt like us in the world.  | 
-| replace / to or                  | /Did you get him a teacher?                              | or Did you get him a teacher?                            | 
-| replace & to and                 | I believe it's because you miss family & friends         | I believe it's because you miss family and friends       | 
-| remove emoji                 | I just got new neighbors and they are so loud.,I know there probably isnt much you can do. :/         | I just got new neighbors and they are so loud.,I know there probably isnt much you can do.       | 
-| restore he's to he is                 | Yeah_comma_ fortunately he's very small so he doesn't have as many joint problems as the bigger dogs I thnik at least.        | Yeah_comma_ fortunately he is very small so he does not have as many joint problems as the bigger dogs I thnik at least.       | 
-| remove punctuation                 | The love towards my wife is become more and it tends to uncountable now!         | The love towards my wife is become more and it tends to uncountable now       | 
-| replace integer to #number                 | It's really sleek and fun to drive,I got the new 2018 Honda Accord LX.         | It's really sleek and fun to drive,I got the new #number Honda Accord LX.       | 
-| remove stopword                 | Was invited to a friends house after work.         | invited to friends house after work.       | 
-| lemmatize                 | football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.         | football be a family   of team sport that involve, to vary degree, kick a ball to score a goal. | 
+|NO. | Method                           | Before                                                                         | After                                    | 
+|----------------------------------|----------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
+|1| replace \_comma\_ to ,             | There was a lot of people_comma_ but it only felt like us in the world.        | There was a lot of people, but it only felt like us in the world.  | 
+|2| replace / to or                  | /Did you get him a teacher?                              | or Did you get him a teacher?                            | 
+|3| replace & to and                 | I believe it's because you miss family & friends         | I believe it's because you miss family and friends       | 
+|4| remove emoji                 | I just got new neighbors and they are so loud.,I know there probably isnt much you can do. :/         | I just got new neighbors and they are so loud.,I know there probably isnt much you can do.       | 
+|5| restore he's to he is                 | Yeah_comma_ fortunately he's very small so he doesn't have as many joint problems as the bigger dogs I thnik at least.        | Yeah_comma_ fortunately he is very small so he does not have as many joint problems as the bigger dogs I thnik at least.       | 
+|6| remove punctuation                 | The love towards my wife is become more and it tends to uncountable now!         | The love towards my wife is become more and it tends to uncountable now       | 
+|7| replace integer to #number                 | It's really sleek and fun to drive,I got the new 2018 Honda Accord LX.         | It's really sleek and fun to drive,I got the new #number Honda Accord LX.       | 
+|8| remove stopword                 | Was invited to a friends house after work.         | invited to friends house after work.       | 
+|9| lemmatize                 | football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.         | football be a family   of team sport that involve, to vary degree, kick a ball to score a goal. | 
 
 ## Model Architecture
 In this project, we used the following three pretrained models for transfer learning, which include [**RoBERTa-Large**](https://arxiv.org/pdf/1907.11692.pdf)[1], [**ERNIE 2.0-Large**](https://arxiv.org/pdf/1907.12412.pdf)[2] and [**XLNet**](https://arxiv.org/pdf/1906.08237.pdf)[3].
