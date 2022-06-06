@@ -11,7 +11,11 @@ import shutil
 from itertools import combinations
 from string import punctuation
 
-# nltk.download('stopwords')
+nltk.download('omw-1.4')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 
 def create_directory(dirname):
