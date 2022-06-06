@@ -16,7 +16,7 @@ In addition, please refer to the following report link for detailed report and d
 
 To reproduce the submission without retrainig, do the following steps:
 1. [Requirement](#Requirement)
-2. [Repository Structure](#RepositoryStructure)
+2. [Repository Structure](#Repository-Structure)
 3. [Ensemble](#Ensemble)
 
 ## Hardware
