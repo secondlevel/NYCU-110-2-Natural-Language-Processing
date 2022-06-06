@@ -14,7 +14,8 @@ In addition, please refer to the following report link for detailed report and d
 
 ## Reproducing Submission
 
-To reproduce the submission without retrainig, do the following steps:
+Please do the following steps to reproduce the submission without retraining.
+
 1. [Requirement](#Requirement)
 2. [Repository Structure](#Repository-Structure)
 3. [Ensemble](#Ensemble)
