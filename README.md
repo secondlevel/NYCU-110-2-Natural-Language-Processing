@@ -198,7 +198,19 @@ To train the model, please follow these steps.
 
 #### 1. Setting arguments through parameters.yaml file.
 
-You can setting the training arguments what you prefer through the parameters.yml file. This file include some parameters, like model, prepocessing data name under the experiment directory, number of training epochs, batch size, learning rate, maximum token in one sentence, the layer of model need to freeze, dropout value, HIDDEN_DROPOUT_PROB value and ATTENTION_PROBS_DROPOUT_PROB value.
+You can setting the training arguments what you prefer through the parameters.yml file.  
+
+This file include some parameters  
+1. Pretrained training model
+2. Prepocessing data directory name which is under the experiment directory
+3. The number of training epochs
+4. The value of batch size
+5. The value of learning rate
+6. Maximum number of token in one sentence
+7. The layer of model need to freeze (requires_grad = false)
+8. The value of nn.Dropout(If you don't want to using the dropout, please set it None)
+9. The value of HIDDEN_DROPOUT_PROB(If you don't want to using the HIDDEN_DROPOUT_PROB, please set it None)
+10. The value of ATTENTION_PROBS_DROPOUT_PROB(If you don't want to using the ATTENTION_PROBS_DROPOUT_PROB, please set it None)
 
 ```python
 model: roberta-large # bert-base, ernie-base, roberta-base, xlnet-base, bert-large, ernie-large, roberta-large, xlnet-large, YOSO
