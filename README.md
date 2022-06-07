@@ -276,32 +276,30 @@ In this project, we use four experiments to verify our method has the best perfo
 
 #### 1. Data Column 
 
-In this section, we find that the combination of Utterance and Prompt is suitable for our methods.
+In this section, we find that the combination of Utterance and Prompt is suitable for all of the model we using in this project.
 
-|  Data Column     | Accuracy | Data Preprocess method | Pretrained Model | Maximum number of tokens |
-|------------------|----------|------------------------|------------------|--------------------------|
-| Utterance        | 0.6126   | NO. 5                  | RoBERTa          | 160                      |
-| Prompt           | 0.6137   | NO. 5                  | RoBERTa          | 160                      |
-| Utterance+Prompt | 0.6649   | NO. 5                  | RoBERTa          | 160                      |
+|  Data Column     | Accuracy | 
+|------------------|----------|
+| Utterance        | 0.6126   | 
+| Prompt           | 0.6137   | 
+| Utterance+Prompt | 0.6649   | 
 
 #### 2. Data Preprocess Method 
 
-In this section, we find that different models are suitable for different data preprocessing methods.
+In this section, we find that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. 
 
-For example, NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. 
-
-| Data Preprocess method | Accuracy | Data Column     | Pretrained Model | Maximum number of tokens |
-|------------------------|----------|-----------------|------------------|--------------------------|
-| NO. 1                  | 0.6606   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 2                  | 0.6595   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 3                  | 0.6635   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 4                  | 0.6592   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 5                  | 0.6649   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 6                  | 0.6542   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 7                  | 0.6552   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 8                  | 0.6238   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 9                  | 0.6527   | Utterance+Prompt | RoBERTa          | 160                      |
-| NO. 10 (no preprocess) | 0.6624   | Utterance+Prompt | RoBERTa          | 160                      |
+| Data Preprocess method | Accuracy |
+|------------------------|----------|
+| NO. 1                  | 0.6606   | 
+| NO. 2                  | 0.6595   | 
+| NO. 3                  | 0.6635   |
+| NO. 4                  | 0.6592   | 
+| NO. 5                  | 0.6649   |
+| NO. 6                  | 0.6542   | 
+| NO. 7                  | 0.6552   | 
+| NO. 8                  | 0.6238   | 
+| NO. 9                  | 0.6527   | 
+| NO. 10 (no preprocess) | 0.6624   | 
 
 
 ## Reference
