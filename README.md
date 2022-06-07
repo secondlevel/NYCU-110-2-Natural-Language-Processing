@@ -338,7 +338,7 @@ We found that large model is better than base model, and the top three models in
 
 |          | BERT-BASE | RoBERTa-BASE | ERNIE-BASE | XLNet-BASE | BERT-LARGE | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | YOSO   |
 |----------|:-----------:|:--------------:|:------------:|:------------:|:------------:|:---------------:|:-------------:|:-------------:|:--------:|
-| Accuracy | 0.5227    | 0.6018       | 0.6181     | 0.6025     | 0.6166     | **0.6397**        | **0.6649**      | **0.6379**      | 0.5567 |
+| Accuracy | 0.5227    | 0.6018       | 0.6181     | 0.6025     | 0.6166     |**0.6649**        | **0.6397**      | **0.6379**      | 0.5567 |
 
 #### 5. Dropout
 
