@@ -352,7 +352,7 @@ We found that dropout are suitable for ERNIE and XLNet. In contrast, dropout is 
 
 In this section, we use ensemble method with the top 3 models. 
 
-|          | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | Ensemble(testing) |
+|          | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | Ensemble(testing F1-score) |
 |----------|:---------------:|:-------------:|:-------------:|:-------------------:|
 | Accuracy | 0.6649        | 0.64404     |             |                   |
 
