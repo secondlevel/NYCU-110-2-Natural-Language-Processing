@@ -307,7 +307,7 @@ In this section, we find that large model is better than base model, and the top
 
 In this section, we find that dropout are suitable for ERNIE and XLNet. In contrast, dropout is not suitable for RoBERTa. The hidden dropout and attention dropout are suitable for RoBERTa and ERNIE.
 
-|          | origin | O dropout | O hidden_dropout_prob | O attention_probs_dropout_prob | hidden_dropout_prob+attention_probs_dropout_prob |
+|          | None | dropout |  hidden_dropout_prob | attention_probs_dropout_prob | hidden_dropout_prob and attention_probs_dropout_prob |
 |----------|--------|-----------|-----------------------|--------------------------------|--------------------------------------------------|
 | Accuracy | 0.6445 | 0.6477    | 0.6471                | 0.6451                         | **0.6524**                                       |
 
