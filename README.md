@@ -291,6 +291,7 @@ python ensemble.py RoBERTa ERNIE XLNet
 
 The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet. 
 
+```bash
 ├─ data
 ├─ ...
 ├─ experiment
@@ -302,10 +303,6 @@ The ensemble submission.csv will be stored under the path of experiment/ensemble
 │     └─ submission.csv       <- You can find the ensemble result in this position. 
 └─ README.md
 ```
-
-<p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172035345-6b6d9930-031f-4ce0-9272-1eedf60200b4.png" width="50%" height="50%" hspace="0"/>
-</p>
 
 ## Experiment Result
 
