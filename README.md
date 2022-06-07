@@ -276,7 +276,7 @@ In this project, we use four experiments to verify our method has the best perfo
 
 #### 1. Data Column 
 
-In this section, we find that the combination of Utterance and Prompt is suitable for all of the model we using in this project.
+In this section, we find that the combination of Utterance and Prompt is suitable for all of the models we use in this project.
 
 |          | Utterance | Prompt | Utterance+Prompt     |
 |----------|-----------|--------|----------------------|
@@ -284,7 +284,7 @@ In this section, we find that the combination of Utterance and Prompt is suitabl
 
 #### 2. Data Preprocess Method 
 
-In this section, we find that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. Only the NO. 3 and NO. 5 is better than nothing to do.
+In this section, we find that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. Only the method NO. 3 and method NO. 5 is better than nothing to do.
 
 |          | NO. 1   | NO. 2  | NO. 3       | NO. 4  | NO. 5      | NO. 6  | NO. 7  | NO. 8  | NO. 9  | NO. 10 |
 |----------|---------|--------|-------------|--------|------------|--------|--------|--------|--------|--------|
