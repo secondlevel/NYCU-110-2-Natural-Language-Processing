@@ -203,9 +203,12 @@ class xlnet_base(nn.Module):
         )
 
         if data["DROPOUT_RATE"] != "None":
-            pooled_output = self.drop(pooled_output)
+            pooled_output = self.drop(pooled_output[0][:, -1, :])
 
-        return self.out(pooled_output[0][:, -1, :])
+            return self.out(pooled_output)
+
+        else:
+            return self.out(pooled_output[0][:, -1, :])
 
 
 class bert_large(nn.Module):
@@ -394,9 +397,12 @@ class xlnet_large(nn.Module):
         )
 
         if data["DROPOUT_RATE"] != "None":
-            pooled_output = self.drop(pooled_output)
+            pooled_output = self.drop(pooled_output[0][:, -1, :])
 
-        return self.out(pooled_output[0][:, -1, :])
+            return self.out(pooled_output)
+
+        else:
+            return self.out(pooled_output[0][:, -1, :])
 
 
 class YOSO(nn.Module):
