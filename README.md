@@ -2,9 +2,7 @@
 
 This project is to identify emotion through corpus, and it is related to [**kaggle competition**](https://www.kaggle.com/competitions/nycu-nlp110/overview).  
 
-The model in this project was built by [**HuggingFace**](https://huggingface.co/).  
-
-Other such like a dataloader was built by **Pytorch**. HuggingFace toolkit was also developed by **Pytorch**.
+The model in this project was built by [**HuggingFace**](https://huggingface.co/) and Pytorch.  
 
 In addition, please refer to the following report link for detailed report and description of the experimental results.
 
@@ -37,12 +35,12 @@ In this project, the conda and pip toolkit was used to build the environment.
 
 The following two **options** are provided for building the environment.
   
-- #### First Option
+#### First Option
 ```bash
 conda env create -f environment.yml
 ```
 
-- #### Second Option 
+#### Second Option 
 ```bash
 conda create --name nlp python=3.8
 conda activate nlp
@@ -139,7 +137,7 @@ In this project, we used the following three pretrained models for transfer lear
 
 The framework of these three classification models is as follows **(only for demonstrate)**: the linear layer would be added to the model for transfer learning. 
 
-- #### RoBERTa-Large
+#### RoBERTa-Large
 ```python
 class RoBERTa(nn.Module):
 
@@ -157,7 +155,7 @@ class RoBERTa(nn.Module):
         return self.out(pooled_output)
 ```
 
-- #### ERNIE 2.0-Large
+#### ERNIE 2.0-Large
 ```python
 class ERNIE(nn.Module):
 
@@ -175,7 +173,7 @@ class ERNIE(nn.Module):
         return self.out(pooled_output)
 ```
 
-- #### XLNet
+#### XLNet
 ```python
 class XLNet(nn.Module):
 
