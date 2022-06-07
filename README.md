@@ -306,7 +306,7 @@ The ensemble submission.csv will be stored under the path of experiment/ensemble
 
 ## Experiment Result
 
-In this project, we use four experiments to verify our method has the best performance. 
+In this project, we use four experiments to verify our method has the best performance. The value of the accuracy which is shown below is the average of the multiple accuracy values.
 
 #### 1. Data Column 
 
