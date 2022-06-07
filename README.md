@@ -213,10 +213,6 @@ HIDDEN_DROPOUT_PROB: 0.2 #None or values
 ATTENTION_PROBS_DROPOUT_PROB: 0.2 #None or values
 ```
 
-<p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034634-fe0bfa25-e8e8-46fd-bbfb-12be85b8a627.png" width="65%" height="65%" hspace="0"/>
-</p>
-
 
 #### 2. Input Commend
 
@@ -225,10 +221,6 @@ You don't need to add any argument behind the train.py.
 ```bash
 python train.py
 ```
-
-<p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034701-e2838040-d9c3-4893-982d-1980efb2ea04.png" width="65%" height="65%" hspace="0"/>
-</p>
 
 
 #### 3. Result
