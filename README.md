@@ -201,13 +201,16 @@ To train the model, please follow these steps.
   <img src="https://user-images.githubusercontent.com/44439517/172034634-fe0bfa25-e8e8-46fd-bbfb-12be85b8a627.png" width="65%" height="65%" hspace="0"/>
 </p>
 
-#### 2. Input commend.
+#### 2. Input Commend
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034701-e2838040-d9c3-4893-982d-1980efb2ea04.png" width="65%" height="65%" hspace="0"/>
 </p>
 
 
-#### 3. The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
+#### 3. Result
+
+The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
+
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="50%" height="50%" hspace="0"/>
 </p>
@@ -217,7 +220,7 @@ To train the model, please follow these steps.
 
 To generate the submission, please follow these steps.
 
-#### 1. Input commend.
+#### 1. Input Commend
 
 The argument behind the --directory is the directory under the experiment. These directory must include **parameters.yaml** and **best_model_state.bin** file.
 
@@ -225,7 +228,10 @@ The argument behind the --directory is the directory under the experiment. These
 python test.py --directory RoBERTa
 ```
 
-#### 2. The submission.csv will be stored under the path of experiment/specified_directory. 
+#### 2. Result
+
+The submission.csv will be stored under the path of experiment/specified_directory. 
+
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172035057-d8af6b99-2e42-4f57-a81f-d98208b482fa.png" width="50%" height="50%" hspace="0"/>
 </p>
@@ -234,15 +240,20 @@ python test.py --directory RoBERTa
 
 To integrate different submission, please follow the steps below.
 
-#### 1. Input commend.
+#### 1. Input Commend
 
-The argument behind the ensemble.py is the directory under the experiment. These directory should have the submission.csv file.
+The argument behind the ensemble.py is the directory under the experiment.   
+
+These directory should have the submission.csv file.
 
 ```bash
 python ensemble.py RoBERTa ERNIE XLNet
 ```
 
-#### 2. The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet. 
+#### 2. Result
+
+The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet. 
+
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172035345-6b6d9930-031f-4ce0-9272-1eedf60200b4.png" width="50%" height="50%" hspace="0"/>
 </p>
