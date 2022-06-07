@@ -272,6 +272,38 @@ The ensemble submission.csv will be stored under the path of experiment/ensemble
 
 ## Experiment Result
 
+In this project, we use four experiments to verify our method has the best performance. 
+
+#### 1. Data Column 
+
+In this section, we find that the combination of Utterance and Prompt is suitable for our methods.
+
+|  Data Column     | Accuracy | Data Preprocess method | Pretrained Model | Maximum number of tokens |
+|------------------|----------|------------------------|------------------|--------------------------|
+| Utterance        | 0.6126   | NO. 5                  | RoBERTa          | 160                      |
+| Prompt           | 0.6137   | NO. 5                  | RoBERTa          | 160                      |
+| Utterance+Prompt | 0.6649   | NO. 5                  | RoBERTa          | 160                      |
+
+#### 2. Data Preprocess Method 
+
+In this section, we find that different models are suitable for different data preprocessing methods.
+
+For example, NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. 
+
+| Data Preprocess method | Accuracy | Data Column     | Pretrained Model | Maximum number of tokens |
+|------------------------|----------|-----------------|------------------|--------------------------|
+| NO. 1                  | 0.6606   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 2                  | 0.6595   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 3                  | 0.6635   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 4                  | 0.6592   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 5                  | 0.6649   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 6                  | 0.6542   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 7                  | 0.6552   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 8                  | 0.6238   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 9                  | 0.6527   | Utterance+Prompt | RoBERTa          | 160                      |
+| NO. 10 (no preprocess) | 0.6624   | Utterance+Prompt | RoBERTa          | 160                      |
+
+
 ## Reference
 [1]	Y. Liu et al., “RoBERTa: A Robustly Optimized BERT Pretraining Approach,” arXiv, arXiv:1907.11692, Jul. 2019. doi: 10.48550/arXiv.1907.11692.  
 
