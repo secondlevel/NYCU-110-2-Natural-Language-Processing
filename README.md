@@ -223,7 +223,7 @@ python train.py
 
 #### 3. Result
 
-The experiment result will be stored at experiment/exp1(The directory can be exp 1 exp 2 exp 3, etc.).
+The experiment result will be stored at experiment/exp1(The directory can be exp1 exp2 exp3, etc.).
 
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="50%" height="50%" hspace="0"/>
