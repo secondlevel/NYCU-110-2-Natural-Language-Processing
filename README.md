@@ -279,7 +279,7 @@ In this project, we use four experiments to verify our method has the best perfo
 In this section, we find that the combination of Utterance and Prompt is suitable for all of the models we use in this project.
 
 |          | Utterance | Prompt | Utterance+Prompt     |
-|----------|-----------|--------|----------------------|
+|----------|:-----------:|:--------:|:----------------------:|
 | Accuracy | 0.6126    | 0.6137 | **0.6649**           | 
 
 #### 2. Data Preprocess Method 
@@ -287,7 +287,7 @@ In this section, we find that the combination of Utterance and Prompt is suitabl
 In this section, we find that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. Only the method NO. 3 and method NO. 5 is better than nothing to do.
 
 |          | NO. 1   | NO. 2  | NO. 3       | NO. 4  | NO. 5      | NO. 6  | NO. 7  | NO. 8  | NO. 9  | NO. 10 |
-|----------|---------|--------|-------------|--------|------------|--------|--------|--------|--------|--------|
+|----------|:---------:|:--------:|:-------------:|:--------:|:------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | Accuracy | 0.6606  | 0.6595 | **0.6635**  | 0.6592 | **0.6649** | 0.6542 | 0.6552 | 0.6238 | 0.6527 | 0.6624 |
 
 #### 3. Maximum number of tokens in one sentence
@@ -300,7 +300,7 @@ In this section, we find that 160 is suitable for RoBERTa and EERNIE, but 256 is
 In this section, we find that large model is better than base model, and the top three models in this project is RoBERTa-large, ERNIE-2.0-large and XLNet-large. 
 
 |          | BERT-BASE | RoBERTa-BASE | ERNIE-BASE | XLNet-BASE | BERT-LARGE | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | YOSO   |
-|----------|-----------|--------------|------------|------------|------------|---------------|-------------|-------------|--------|
+|----------|:-----------:|:--------------:|:------------:|:------------:|:------------:|:---------------:|:-------------:|:-------------:|:--------:|
 | Accuracy | 0.5227    | 0.6018       | 0.6181     | 0.6025     | 0.6166     | **0.6397**        | **0.6649**      | **0.6379**      | 0.5567 |
 
 #### 5. Dropout
@@ -308,7 +308,7 @@ In this section, we find that large model is better than base model, and the top
 In this section, we find that dropout are suitable for ERNIE and XLNet. In contrast, dropout is not suitable for RoBERTa. The hidden dropout and attention dropout are suitable for RoBERTa and ERNIE.
 
 |          | None | dropout |  hidden_dropout_prob | attention_probs_dropout_prob | hidden_dropout_prob and attention_probs_dropout_prob    |
-|----------|--------|-----------|-----------------------|--------------------------------|--------------------------------------------------|
+|----------|:--------:|:-----------:|:-----------------------:|:--------------------------------:|:--------------------------------------------------:|
 | Accuracy | 0.6445 | 0.6477    | 0.6471                | 0.6451                         | **0.6524**                                       |
 
 #### 5. Ensemble
@@ -316,7 +316,7 @@ In this section, we find that dropout are suitable for ERNIE and XLNet. In contr
 In this section, we use ensemble method with the top 3 models. 
 
 |          | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | Ensemble(testing) |
-|----------|---------------|-------------|-------------|-------------------|
+|----------|:---------------:|:-------------:|:-------------:|:-------------------:|
 | Accuracy | 0.6649        | 0.64404     |             |                   |
 
 
