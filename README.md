@@ -328,6 +328,9 @@ We found that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.
 
 We found that 160 is suitable for RoBERTa and EERNIE, but 256 is more suitable for XLNet.
 
+|          | 100    | 128    | 160    | 256     | 512    |
+|:--------:|:------:|:------:|:------:|:-------:|:------:|
+| Accuracy | 0.6439 | 0.6458 | 0.6477 | 0.65308 | 0.6480 |
 
 #### 4. Pretrained Model
 
