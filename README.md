@@ -198,7 +198,7 @@ To train the model, please follow these steps.
 
 #### 1. Setting arguments through parameters.yaml file.
 
-You can setting the training arguments what you prefer through the parameters.yml file.  
+You can set the training arguments that you prefer through the parameters.yml file.  
 
 ```yaml
 model: roberta-large # bert-base, ernie-base, roberta-base, xlnet-base, bert-large, ernie-large, roberta-large, xlnet-large, YOSO
