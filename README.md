@@ -197,11 +197,35 @@ class XLNet(nn.Module):
 To train the model, please follow these steps.
 
 #### 1. Setting arguments through parameters.yaml file.
+
+You can setting the training arguments what you prefer through the parameters.yml file. This file include some parameters, like model, prepocessing data name under the experiment directory, number of training epochs, batch size, learning rate, maximum token in one sentence, the layer of model need to freeze, dropout value, HIDDEN_DROPOUT_PROB value and ATTENTION_PROBS_DROPOUT_PROB value.
+
+```python
+model: roberta-large # bert-base, ernie-base, roberta-base, xlnet-base, bert-large, ernie-large, roberta-large, xlnet-large, YOSO
+USING_DATA: best_data # 1(utterance+prompt), 2(utterance+prompt)...
+EPOCHS: 20 
+BATCH_SIZE: 8 # 1 2 4 8(large model) 32(recommend) 64(recommend) 
+LR: 2e-6 # 2e-3 2e-5(recommend) 2e-6(large model)
+MAX_LEN: 160 # 100 128 160 256 512
+FREEZE: [] #[], [embeddings], [encoder], [pooler], [embeddings, encoder], [encoder, pooler], [embeddings, encoder, pooler]...
+DROPOUT_RATE: None #None or values
+HIDDEN_DROPOUT_PROB: 0.2 #None or values
+ATTENTION_PROBS_DROPOUT_PROB: 0.2 #None or values
+```
+
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034634-fe0bfa25-e8e8-46fd-bbfb-12be85b8a627.png" width="65%" height="65%" hspace="0"/>
 </p>
 
+
 #### 2. Input Commend
+
+You don't need to add any argument behind the train.py.
+
+```bash
+python train.py
+```
+
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172034701-e2838040-d9c3-4893-982d-1980efb2ea04.png" width="65%" height="65%" hspace="0"/>
 </p>
