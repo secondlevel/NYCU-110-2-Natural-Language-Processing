@@ -242,9 +242,7 @@ To integrate different submission, please follow the steps below.
 
 #### 1. Input Commend
 
-The argument behind the ensemble.py is the directory under the experiment.   
-
-These directory should have the submission.csv file.
+The argument behind the ensemble.py is the directory under the experiment. These directory should have the submission.csv file.
 
 ```bash
 python ensemble.py RoBERTa ERNIE XLNet
