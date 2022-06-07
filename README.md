@@ -213,19 +213,6 @@ HIDDEN_DROPOUT_PROB: 0.2 #None or values
 ATTENTION_PROBS_DROPOUT_PROB: 0.2 #None or values
 ```
 
-This file include some parameters  
-1. Pretrained training model
-2. Prepocessing data directory name which is under the experiment directory
-3. The number of training epochs
-4. The value of batch size
-5. The value of learning rate
-6. Maximum number of token in one sentence
-7. The layer of model need to freeze (requires_grad = false)
-8. The value of nn.Dropout(If you don't want to using the dropout, please set it None)
-9. The value of HIDDEN_DROPOUT_PROB(If you don't want to using the HIDDEN_DROPOUT_PROB, please set it None)
-10. The value of ATTENTION_PROBS_DROPOUT_PROB(If you don't want to using the ATTENTION_PROBS_DROPOUT_PROB, please set it None)
-
-
 #### 2. Input Commend
 
 You don't need to add any argument behind the train.py.
@@ -233,7 +220,6 @@ You don't need to add any argument behind the train.py.
 ```bash
 python train.py
 ```
-
 
 #### 3. Result
 
