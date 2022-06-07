@@ -221,14 +221,26 @@ You don't need to add any argument behind the train.py.
 python train.py
 ```
 
-#### 3. Result
+#### 3. The position of experiment result
 
-The experiment result will be stored at experiment/exp1(The directory can be exp1 exp2 exp3, etc.).
-
-<p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172034674-3ea18ab7-203c-4746-9179-3dbef9aead5f.png" width="50%" height="50%" hspace="0"/>
-</p>
-
+```bash
+├─ data
+├─ ...
+├─ ...
+├─ experiment
+│  ├─ exp1                <- You can find the experiment result in this position.(The directory can be exp1 exp2 exp3, etc. According to the highest directory number).
+│     ├─ figure
+│        ├─ accuracy.png
+│        └─ loss.png 
+│     ├─ best_model_state.bin
+│     ├─ parameters.yaml
+│     ├─ record.csv
+│     └─ submission.csv
+│  ├─ ERNIE
+│  ├─ RoBERTa
+│  └─ XLNet
+└─ README.md
+```
 
 ## Testing
 
@@ -242,13 +254,26 @@ The argument behind the --directory is the directory under the experiment. These
 python test.py --directory RoBERTa
 ```
 
-#### 2. Result
+#### 2. The position of the testing result
 
 The submission.csv will be stored under the path of experiment/specified_directory. 
 
-<p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/172035057-d8af6b99-2e42-4f57-a81f-d98208b482fa.png" width="50%" height="50%" hspace="0"/>
-</p>
+```bash
+├─ data
+├─ ...
+├─ experiment
+│  ├─ ERNIE
+│  ├─ RoBERTa
+│     ├─ figure
+│        ├─ accuracy.png
+│        └─ loss.png 
+│     ├─ best_model_state.bin
+│     ├─ parameters.yaml
+│     ├─ record.csv
+│     └─ submission.csv          <- You can find the testing result in this position. 
+│  └─ XLNet
+└─ README.md
+```
 
 ## Ensemble
 
@@ -262,9 +287,21 @@ The argument behind the ensemble.py is the directory under the experiment. These
 python ensemble.py RoBERTa ERNIE XLNet
 ```
 
-#### 2. Result
+#### 2. The position of the ensemble result
 
 The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet. 
+
+├─ data
+├─ ...
+├─ experiment
+│  ├─ ERNIE
+│  ├─ RoBERTa
+│  └─ XLNet
+├─ ensemble                   <- The program will create ensemble directory.
+│  └─ RoBERTa+ERNIE+XLNet     <- The program will create RoBERTa+ERNIE+XLNet directory.
+│     └─ submission.csv       <- You can find the ensemble result in this position. 
+└─ README.md
+```
 
 <p float="center">
   <img src="https://user-images.githubusercontent.com/44439517/172035345-6b6d9930-031f-4ce0-9272-1eedf60200b4.png" width="50%" height="50%" hspace="0"/>
