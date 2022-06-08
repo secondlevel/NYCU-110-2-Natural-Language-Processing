@@ -251,7 +251,7 @@ To generate the submission, please follow these steps.
 The argument behind the --directory is the directory under the experiment. These directory must include **parameters.yaml** and **best_model_state.bin** file.
 
 ```bash
-python test.py --directory RoBERTa
+python test.py --directory RoBERTa 
 ```
 
 #### 2. The position of the testing result
