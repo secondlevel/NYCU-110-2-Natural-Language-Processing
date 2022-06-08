@@ -284,7 +284,7 @@ To integrate different submission, please follow the steps below.
 The argument behind the ensemble.py is the directory under the experiment. These directory should have the submission.csv file.
 
 ```bash
-python ensemble.py RoBERTa ERNIE XLNet
+python ensemble2.py RoBERTa ERNIE XLNet
 ```
 
 #### 2. The position of the ensemble result
@@ -298,7 +298,7 @@ The ensemble submission.csv will be stored under the path of experiment/ensemble
 │  ├─ ERNIE
 │  ├─ RoBERTa
 │  └─ XLNet
-├─ ensemble                   <- The program will create ensemble directory.
+├─ ensemble2                   <- The program will create ensemble directory.
 │  └─ RoBERTa+ERNIE+XLNet     <- The program will create RoBERTa+ERNIE+XLNet directory.
 │     └─ submission.csv       <- You can find the ensemble result in this position. 
 └─ README.md
