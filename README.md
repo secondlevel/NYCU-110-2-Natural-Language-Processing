@@ -91,7 +91,8 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
 │     ├─ record.csv
-│     └─ submission.csv
+│     ├─ submission1.csv
+│     └─ submission2.csv
 │  ├─ RoBERTa
 │     ├─ figure
 │        ├─ accuracy.png
@@ -99,7 +100,8 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
 │     ├─ record.csv
-│     └─ submission.csv
+│     ├─ submission1.csv
+│     └─ submission2.csv
 │  └─ XLNet
 │     ├─ figure
 │        ├─ accuracy.png
@@ -107,7 +109,8 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
 │     ├─ record.csv
-│     └─ submission.csv
+│     ├─ submission1.csv
+│     └─ submission2.csv
 └─ README.md
 ```
 
@@ -234,7 +237,8 @@ python train.py
 │        └─ loss.png 
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
-│     └─record.csv
+│     ├─ confusion_matrix.csv
+│     └─ record.csv
 │  ├─ ERNIE
 │  ├─ RoBERTa
 │  └─ XLNet
@@ -247,7 +251,7 @@ To generate the submission, please follow these steps.
 
 #### 1. Input Commend
 
-The argument behind the --directory is the directory under the experiment. These directory must include **parameters.yaml** and **best_model_state.bin** file.
+The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that  needs to multiplicate with predicted probability. These directory must include **parameters.yaml** and **best_model_state.bin** file.
 
 ```bash
 python test2.py --directory RoBERTa --weight 0.4
@@ -255,7 +259,7 @@ python test2.py --directory RoBERTa --weight 0.4
 
 #### 2. The position of the testing result
 
-The submission.csv will be stored under the path of experiment/specified_directory. 
+The submission2.csv will be stored under the path of experiment/specified_directory. 
 
 ```bash
 ├─ data
