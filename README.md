@@ -234,8 +234,7 @@ python train.py
 │        └─ loss.png 
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
-│     ├─ record.csv
-│     └─ submission.csv
+│     └─record.csv
 │  ├─ ERNIE
 │  ├─ RoBERTa
 │  └─ XLNet
@@ -281,7 +280,7 @@ To integrate different submission, please follow the steps below.
 
 #### 1. Input Commend
 
-The argument behind the ensemble.py is the directory under the experiment. These directory should have the submission.csv file.
+The argument behind the ensemble2.py is the directory under the experiment. These directory should have the submission2.csv file.
 
 ```bash
 python ensemble2.py RoBERTa ERNIE XLNet
@@ -289,7 +288,7 @@ python ensemble2.py RoBERTa ERNIE XLNet
 
 #### 2. The position of the ensemble result
 
-The ensemble submission.csv will be stored under the path of experiment/ensemble/RoBERTa+ERNIE+XLNet. 
+The ensemble submission2.csv will be stored under the path of experiment/ensemble2/RoBERTa+ERNIE+XLNet. 
 
 ```bash
 ├─ data
