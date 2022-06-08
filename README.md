@@ -251,7 +251,7 @@ To generate the submission, please follow these steps.
 The argument behind the --directory is the directory under the experiment. These directory must include **parameters.yaml** and **best_model_state.bin** file.
 
 ```bash
-python test.py --directory RoBERTa --weight 0.4
+python test2.py --directory RoBERTa --weight 0.4
 ```
 
 #### 2. The position of the testing result
@@ -270,7 +270,7 @@ The submission.csv will be stored under the path of experiment/specified_directo
 │     ├─ best_model_state.bin
 │     ├─ parameters.yaml
 │     ├─ record.csv
-│     └─ submission.csv          <- You can find the testing result in this position. 
+│     └─ submission2.csv          <- You can find the testing result in this position. 
 │  └─ XLNet
 └─ README.md
 ```
@@ -300,7 +300,7 @@ The ensemble submission.csv will be stored under the path of experiment/ensemble
 │  └─ XLNet
 ├─ ensemble2                   <- The program will create ensemble directory.
 │  └─ RoBERTa+ERNIE+XLNet     <- The program will create RoBERTa+ERNIE+XLNet directory.
-│     └─ submission.csv       <- You can find the ensemble result in this position. 
+│     └─ submission2.csv       <- You can find the ensemble result in this position. 
 └─ README.md
 ```
 
