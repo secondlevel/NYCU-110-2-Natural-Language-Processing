@@ -355,7 +355,7 @@ We found that dropout are suitable for ERNIE and XLNet. In contrast, dropout is 
 |----------|:--------:|:-----------:|:-----------------------:|:--------------------------------:|:--------------------------------------------------:|
 | Accuracy | 0.6445 | 0.6477    | 0.6471                | 0.6451                         | **0.6524**                                       |
 
-#### 5. Ensemble
+#### 6. Ensemble
 
 In this section, we use ensemble method with the top 3 models. 
 
