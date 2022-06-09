@@ -29,7 +29,7 @@ probability = []
 parser = argparse.ArgumentParser()
 parser.add_argument('--directory', type=str, default='',
                     help='testing directory')
-parser.add_argument('--weight', type=int, default='0.4',
+parser.add_argument('--weight', type=float, default='0.4',
                     help='model probability weight')
 
 opt = parser.parse_args()
