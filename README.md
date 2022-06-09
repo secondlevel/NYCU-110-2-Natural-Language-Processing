@@ -255,7 +255,7 @@ These directory must include **parameters.yaml** and **best_model_state.bin** fi
 
 The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that needs to multiplicate with predicted probability.  
 
-We recommend that the weight of RoBERTa should be 0.4, the weight of ERNIE and XLNet should be 0.3. 
+We recommend that the weight of RoBERTa should be 0.4. The weight of ERNIE should be 0.35. The weight of XLNet should be 0.25. 
 
 ```bash
 python test2.py --directory RoBERTa --weight 0.4
