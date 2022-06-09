@@ -227,9 +227,17 @@ def csv_confusion_matrix(y_pred, y_true, class_num):
 if os.path.exists("experiment") == False:
     os.mkdir("experiment")
 
+
 if len(os.listdir("experiment")) > 0:
-    experiment = (sorted([int(x.replace("exp", ""))
-                          for x in os.listdir("experiment") if "exp" in x])[-1])+1
+    create_exp = False
+    for file in os.listdir("experiment"):
+        if "exp" in file:
+            create_exp = True
+    if create_exp:
+        experiment = (sorted([int(x.replace("exp", ""))
+                              for x in os.listdir("experiment") if "exp" in x])[-1])+1
+    else:
+        experiment = 1
 else:
     experiment = 1
 
@@ -329,4 +337,4 @@ for epoch in range(EPOCHS):
     df_record = pd.DataFrame(columns=df_record.columns, data=new_record_data)
     df_record.to_csv("experiment/exp"+str(experiment) +
                      "/record.csv", index=False)
-    draw_history("experiment/exp"+str(experiment))
+    draw_history("experiment/exp"+str(experiment))v
