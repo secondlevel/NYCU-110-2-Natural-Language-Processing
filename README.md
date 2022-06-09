@@ -361,7 +361,7 @@ In this section, we use ensemble method with the top 3 models.
 
 |          | RoBERTa-LARGE | ERNIE-LARGE | XLNet-LARGE | Ensemble |
 |----------|:---------------:|:-------------:|:-------------:|:-------------------:|
-| F1-score | 0.64239        |    0.62535   |      0.61961       |        0.65396           |
+| F1-score | 0.64239        |    0.62535   |      0.61961       |        0.65633           |
 
 
 ## Reference
