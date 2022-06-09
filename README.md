@@ -76,13 +76,19 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ fixed_group_train.csv
 │     └─ fixed_group_valid.csv
 ├─ train.py
-├─ test.py
+├─ test1.py
+├─ test2.py
+├─ ensemble1.py
+├─ ensemble2.py
 ├─ parameters.yaml
 ├─ nlpdatasets.py
 ├─ total_model.py
 ├─ fixed_test.csv
 ├─ fixed_train.csv
 ├─ fixed_valid.csv
+├─ ensemble2
+│  └─ RoBERTa+ERNIE+XLNet
+│     └─ submission.csv
 ├─ experiment
 │  ├─ ERNIE
 │     ├─ figure
