@@ -47,7 +47,7 @@ conda activate nlp
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
 conda install matplotlib pandas scikit-learn -y
 pip install tqdm
-pip install transformer
+pip install transformers
 pip install sentencepiece
 pip install emoji
 pip install nltk
