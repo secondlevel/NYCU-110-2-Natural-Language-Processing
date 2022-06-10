@@ -4,9 +4,8 @@ This project is to identify emotion through corpus, and it is related to [**kagg
 
 The model in this project was built by [**HuggingFace**](https://huggingface.co/) and Pytorch.  
 
-
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/173000510-94012f33-e016-4f3f-ab46-4ed0875ae412.png" width="65%" height="65%" hspace="150"/>
+  <img src="https://user-images.githubusercontent.com/44439517/173000715-6985a7f0-3061-4b44-99f0-5c5e53a6b0cd.png" width="65%" height="65%" hspace="150"/>
 </p>
 
 ## Reproducing Submission
