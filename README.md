@@ -313,7 +313,7 @@ The ensemble submission2.csv will be stored under the path of experiment/ensembl
 │  └─ XLNet
 ├─ ensemble2                   <- The program will create ensemble2 directory.
 │  └─ RoBERTa+ERNIE+XLNet      <- The program will create RoBERTa+ERNIE+XLNet directory.
-│     └─ submission2.csv       <- You can find the ensemble result in this position. 
+│     └─ submission.csv       <- You can find the ensemble result in this position. 
 └─ README.md
 ```
 
