@@ -270,7 +270,7 @@ These directory should have **parameters.yaml** and **best_model_state.bin** fil
 
 The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that needs to multiplicate with predicted probability.  
 
-**Before you do the ensemble method, you should do the all commends below.**
+**Before you do the ensemble method, you should do all commends below.**
 
 The weight of RoBERTa should be 0.4. 
 ```bash
