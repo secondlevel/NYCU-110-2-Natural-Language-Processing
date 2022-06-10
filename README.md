@@ -14,14 +14,14 @@ In addition, please refer to the following report link for detailed report and d
 
 Please do the following steps to reproduce the submission without retraining. You have two option to reproduce our method.
 
-The first option will **not need to do** model evaluate. The second option will **need to do** the model evaluation. 
+The first option will **not need to do** the model evaluation. The second option will **need to do** the model evaluation. 
 
-#### First Option
+### First Option
 1. [Requirement](#Requirement)
 2. [Repository Structure](#Repository-Structure)
 3. [Ensemble](#Ensemble)
 
-#### Second Option
+### Second Option
 1. [Requirement](#Requirement)
 2. [Repository Structure](#Repository-Structure)
 3. [Testing](#Testing)
@@ -44,12 +44,12 @@ In this project, the conda and pip toolkit was used to build the environment.
 
 The following two **options** are provided for building the environment.
   
-#### First Option
+### First Option
 ```bash
 conda env create -f environment.yml
 ```
 
-#### Second Option 
+### Second Option 
 ```bash
 conda create --name nlp python=3.8
 conda activate nlp
@@ -155,7 +155,7 @@ In this project, we used the following three pretrained models for transfer lear
 
 The framework of these three classification models is as follows **(only for demonstrate)**: the linear layer would be added to the model for transfer learning. 
 
-#### RoBERTa-Large
+### RoBERTa-Large
 ```python
 class RoBERTa(nn.Module):
 
@@ -173,7 +173,7 @@ class RoBERTa(nn.Module):
         return self.out(pooled_output)
 ```
 
-#### ERNIE 2.0-Large
+### ERNIE 2.0-Large
 ```python
 class ERNIE(nn.Module):
 
@@ -191,7 +191,7 @@ class ERNIE(nn.Module):
         return self.out(pooled_output)
 ```
 
-#### XLNet
+### XLNet
 ```python
 class XLNet(nn.Module):
 
@@ -214,7 +214,7 @@ class XLNet(nn.Module):
 
 To train the model, please follow these steps.
 
-#### 1. Setting arguments through parameters.yaml file.
+### 1. Setting arguments through parameters.yaml file.
 
 You can set the training arguments that you prefer through the parameters.yml file.  
 
@@ -231,7 +231,7 @@ HIDDEN_DROPOUT_PROB: 0.2 #None or values
 ATTENTION_PROBS_DROPOUT_PROB: 0.2 #None or values
 ```
 
-#### 2. Input Commend
+### 2. Input Commend
 
 You don't need to add any argument behind the train.py.
 
@@ -239,7 +239,7 @@ You don't need to add any argument behind the train.py.
 python train.py
 ```
 
-#### 3. The position of experiment result
+### 3. The position of experiment result
 
 ```bash
 ├─ data
@@ -264,7 +264,7 @@ python train.py
 
 To generate the submission, please follow these steps.
 
-#### 1. Input Commend
+### 1. Input Commend
 
 These directory should have **parameters.yaml** and **best_model_state.bin** file.  
 
@@ -287,7 +287,7 @@ We recommend that the weight of XLNet should be 0.25.
 python test2.py --directory XLNet --weight 0.25
 ```
 
-#### 2. The position of the testing result
+### 2. The position of the testing result
 
 The submission2.csv will be stored under the path of experiment/specified_directory. 
 
@@ -312,7 +312,7 @@ The submission2.csv will be stored under the path of experiment/specified_direct
 
 To integrate different submission, please follow the steps below.
 
-#### 1. Input Commend
+### 1. Input Commend
 
 The argument behind the ensemble2.py is the directory under the experiment. These directory should have the submission2.csv file.
 
@@ -320,7 +320,7 @@ The argument behind the ensemble2.py is the directory under the experiment. Thes
 python ensemble2.py RoBERTa ERNIE XLNet
 ```
 
-#### 2. The position of the ensemble result
+### 2. The position of the ensemble result
 
 The ensemble submission2.csv will be stored under the path of experiment/ensemble2/RoBERTa+ERNIE+XLNet. 
 
@@ -350,7 +350,7 @@ The ensemble submission2.csv will be stored under the path of experiment/ensembl
 
 In this project, we use four experiments to verify our method has the best performance. The value of the accuracy which is shown below is the average of the multiple accuracy values.
 
-#### 1. Data Column 
+### 1. Data Column 
 
 We found that the combination of Utterance and Prompt is suitable for all of the models we use in this project.
 
@@ -358,7 +358,7 @@ We found that the combination of Utterance and Prompt is suitable for all of the
 |----------|:-----------:|:--------:|:----------------------:|
 | Accuracy | 0.6126    | 0.6137 | **0.6649**           | 
 
-#### 2. Data Preprocess Method 
+### 2. Data Preprocess Method 
 
 We found that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.3 and NO.5 is suitable for XLNet. Only the method NO. 3 and method NO. 5 is better than nothing to do.
 
@@ -366,7 +366,7 @@ We found that NO.5 is suitable for Roberta and ERNIE, but the combination of NO.
 |----------|:---------:|:--------:|:-------------:|:--------:|:------------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | Accuracy | 0.6606  | 0.6595 | **0.6635**  | 0.6592 | **0.6649** | 0.6542 | 0.6552 | 0.6238 | 0.6527 | 0.6624 |
 
-#### 3. Maximum number of tokens in one sentence
+### 3. Maximum number of tokens in one sentence
 
 We found that 160 is suitable for RoBERTa and EERNIE, but 256 is more suitable for XLNet.
 
@@ -374,7 +374,7 @@ We found that 160 is suitable for RoBERTa and EERNIE, but 256 is more suitable f
 |:--------:|:------:|:------:|:------:|:-------:|:------:|
 | Accuracy | 0.6439 | 0.6458 | 0.6477 | 0.65308 | 0.6480 |
 
-#### 4. Pretrained Model
+### 4. Pretrained Model
 
 We found that large model is better than base model, and the top three models in this project is RoBERTa-large, ERNIE-2.0-large and XLNet-large. 
 
@@ -382,7 +382,7 @@ We found that large model is better than base model, and the top three models in
 |----------|:-----------:|:--------------:|:------------:|:------------:|:------------:|:---------------:|:-------------:|:-------------:|:--------:|
 | Accuracy | 0.5227    | 0.6018       | 0.6181     | 0.6025     | 0.6166     |**0.6649**        | **0.6397**      | **0.6379**      | 0.5567 |
 
-#### 5. Dropout
+### 5. Dropout
 
 We found that dropout are suitable for ERNIE and XLNet. In contrast, dropout is not suitable for RoBERTa. The hidden dropout and attention dropout are suitable for RoBERTa and ERNIE.
 
@@ -390,7 +390,7 @@ We found that dropout are suitable for ERNIE and XLNet. In contrast, dropout is 
 |----------|:--------:|:-----------:|:-----------------------:|:--------------------------------:|:--------------------------------------------------:|
 | Accuracy | 0.6445 | 0.6477    | 0.6471                | 0.6451                         | **0.6524**                                       |
 
-#### 6. Ensemble
+### 6. Ensemble
 
 In this section, we use ensemble method with the top 3 models. 
 
