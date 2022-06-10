@@ -12,11 +12,20 @@ In addition, please refer to the following report link for detailed report and d
 
 ## Reproducing Submission
 
-Please do the following steps to reproduce the submission without retraining.
+Please do the following steps to reproduce the submission without retraining. You have two option to reproduce our method.
 
+The first option will **not need to do** model evaluate. The second option will **need to do** the model evaluation. 
+
+#### First Option
 1. [Requirement](#Requirement)
 2. [Repository Structure](#Repository-Structure)
 3. [Ensemble](#Ensemble)
+
+#### Second Option
+1. [Requirement](#Requirement)
+2. [Repository Structure](#Repository-Structure)
+3. [Testing](#Testing)
+4. [Ensemble](#Ensemble)
 
 ## Hardware
 
@@ -261,10 +270,21 @@ These directory should have **parameters.yaml** and **best_model_state.bin** fil
 
 The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that needs to multiplicate with predicted probability.  
 
-We recommend that the weight of RoBERTa should be 0.4, the weight of ERNIE should be 0.35, and the weight of XLNet should be 0.25. 
+Before you do the ensemble method, you should do the all commends below.
 
+We recommend that the weight of RoBERTa should be 0.4. 
 ```bash
 python test2.py --directory RoBERTa --weight 0.4
+```
+
+We recommend that weight of ERNIE should be 0.35. 
+```bash
+python test2.py --directory ERNIE --weight 0.35
+```
+
+We recommend that the weight of XLNet should be 0.25. 
+```bash
+python test2.py --directory XLNet --weight 0.25
 ```
 
 #### 2. The position of the testing result
