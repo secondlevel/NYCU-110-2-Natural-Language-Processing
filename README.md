@@ -272,17 +272,17 @@ The argument behind the --directory is the directory under the experiment. The a
 
 Before you do the ensemble method, you should do the all commends below.
 
-We recommend that the weight of RoBERTa should be 0.4. 
+**We recommend that the weight of RoBERTa should be 0.4.** 
 ```bash
 python test2.py --directory RoBERTa --weight 0.4
 ```
 
-We recommend that weight of ERNIE should be 0.35. 
+**We recommend that weight of ERNIE should be 0.35.** 
 ```bash
 python test2.py --directory ERNIE --weight 0.35
 ```
 
-We recommend that the weight of XLNet should be 0.25. 
+**We recommend that the weight of XLNet should be 0.25.** 
 ```bash
 python test2.py --directory XLNet --weight 0.25
 ```
