@@ -1,1 +1,1 @@
-You need to follow the discription in the hackmd and put the directory under the experiment.
+You need to follow the discription in the markdown and put the directory under the experiment.
