@@ -280,8 +280,8 @@ The submission2.csv will be stored under the path of experiment/specified_direct
 │     ├─ figure
 │        ├─ accuracy.png
 │        └─ loss.png 
-│     ├─ best_model_state.bin
-│     ├─ parameters.yaml
+│     ├─ best_model_state.bin     <- You should have this file under this directory.
+│     ├─ parameters.yaml          <- You should have this file under this directory.
 │     ├─ record.csv
 │     └─ submission2.csv          <- You can find the testing result in this position. 
 │  └─ XLNet
@@ -309,11 +309,20 @@ The ensemble submission2.csv will be stored under the path of experiment/ensembl
 ├─ ...
 ├─ experiment
 │  ├─ ERNIE
+│     ├─ ...
+│     ├─ ...
+│     └─ submission2.csv       <- You should have this file under this directory.
 │  ├─ RoBERTa
+│     ├─ ...
+│     ├─ ...
+│     └─ submission2.csv       <- You should have this file under this directory.
 │  └─ XLNet
+│     ├─ ...
+│     ├─ ...
+│     └─ submission2.csv       <- You should have this file under this directory.
 ├─ ensemble2                   <- The program will create ensemble2 directory.
 │  └─ RoBERTa+ERNIE+XLNet      <- The program will create RoBERTa+ERNIE+XLNet directory.
-│     └─ submission.csv       <- You can find the ensemble result in this position. 
+│     └─ submission.csv        <- You can find the ensemble result in this position. 
 └─ README.md
 ```
 
