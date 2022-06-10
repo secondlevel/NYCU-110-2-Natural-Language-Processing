@@ -257,7 +257,7 @@ To generate the submission, please follow these steps.
 
 #### 1. Input Commend
 
-These directory must include **parameters.yaml** and **best_model_state.bin** file.  
+These directory should have **parameters.yaml** and **best_model_state.bin** file.  
 
 The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that needs to multiplicate with predicted probability.  
 
