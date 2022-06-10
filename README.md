@@ -99,7 +99,7 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │  └─ RoBERTa+ERNIE+XLNet
 │     └─ submission.csv
 ├─ experiment
-│  ├─ ERNIE
+│  ├─ ERNIE                           <- You can find in the google cloud link above, please decompress under the experiment directory.
 │     ├─ figure
 │        ├─ accuracy.png
 │        └─ loss.png 
@@ -108,7 +108,7 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ record.csv
 │     ├─ submission1.csv
 │     └─ submission2.csv
-│  ├─ RoBERTa
+│  ├─ RoBERTa                         <- You can find in the google cloud link above, please decompress under the experiment directory.
 │     ├─ figure
 │        ├─ accuracy.png
 │        └─ loss.png 
@@ -117,7 +117,7 @@ https://drive.google.com/drive/folders/1RL8fe4Q6cFrMA9M2vysXNAHUE2C1wIm_?usp=sha
 │     ├─ record.csv
 │     ├─ submission1.csv
 │     └─ submission2.csv
-│  └─ XLNet
+│  └─ XLNet                           <- You can find in the google cloud link above, please decompress under the experiment directory.
 │     ├─ figure
 │        ├─ accuracy.png
 │        └─ loss.png 
