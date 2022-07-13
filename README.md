@@ -229,7 +229,7 @@ HIDDEN_DROPOUT_PROB: 0.2 #None or values
 ATTENTION_PROBS_DROPOUT_PROB: 0.2 #None or values
 ```
 
-### 2. Input Commend
+### 2. Input Command
 
 You don't need to add any argument behind the train.py.
 
@@ -262,13 +262,13 @@ python train.py
 
 To generate the submission, please follow these steps.
 
-### 1. Input Commend
+### 1. Input Command
 
 These directory should have **parameters.yaml** and **best_model_state.bin** file.  
 
 The argument behind the --directory is the directory under the experiment. The argument behind weight is the weight that needs to multiplicate with predicted probability.  
 
-**Before you do the ensemble method, you should do all commends below.**
+**Before you do the ensemble method, you should do all commands below.**
 
 The weight of RoBERTa should be 0.4. 
 ```bash
@@ -310,7 +310,7 @@ The submission2.csv will be stored under the path of experiment/specified_direct
 
 To integrate different submission, please follow the steps below.
 
-### 1. Input Commend
+### 1. Input Command
 
 The argument behind the ensemble2.py is the directory under the experiment. These directory should have the submission2.csv file.
 
